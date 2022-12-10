@@ -5,3 +5,5 @@ const App = () => {
             <Technologies />
         </div>);
 }
+
+export default App;
