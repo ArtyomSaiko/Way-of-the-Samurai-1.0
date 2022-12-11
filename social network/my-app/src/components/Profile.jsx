@@ -1,18 +1,27 @@
 import React from 'react';
+import s from './Profile.module.css';
 
 const Profile = ()=>{
-    return <div className='content'>
+    return <div className={s.content}>
     <div>
-    <img src='https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/4d/45/97/minsk.jpg?w=700&h=500&s=1' />
+    <img src='https://zastavok.net/main/auto/1423524421.jpg' />
     </div>
     <div>
         ava + text
     </div>
     <div>
         my post
-    </div>
-    <div>
+        <div>
         new post
+        </div>
+      <div className ={s.post}>
+        <div className ={s.item}>
+        post 1
+        </div>
+        <div className ={s.item}>
+        post 2
+        </div>
+      </div>
     </div>
 </div>
 }
