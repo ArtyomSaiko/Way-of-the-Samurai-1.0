@@ -14,10 +14,7 @@ const MyPosts = () => {
         <Posts />
         <Posts />
         <Posts />
-        <Posts />
-        <Posts />
-        <Posts />
-      </div>
+        </div>
     </div>)
 }
 
