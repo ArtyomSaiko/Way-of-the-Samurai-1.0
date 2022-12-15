@@ -1,15 +1,19 @@
 .nav {
    grid-area: n;
    background-color: #222629;
-   }
- 
-   .item {
-    margin-left: 10px;
-    color: #86C232;
-    font-weight: bold;
-    font-family: cursive;
-   }
+}
 
-   .item.active {
-      color: gold;
-   }
+.item {
+   margin-left: 10px;
+   font-weight: bold;
+   font-family: cursive;
+   text-decoration: none;
+}
+
+.item {
+   color: yellow;
+}
+.active {
+   color: red;
+   text-decoration: none
+}
