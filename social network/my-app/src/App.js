@@ -10,8 +10,10 @@ const App = () => {
         <div className='app-wrapper'>
             <Header />
             <Nav />
-            <Dialogs />
-           {/*} <Profile />*/}
+            <div class='app-wrapper-content'>
+                <Dialogs />
+                {/*} <Profile />*/}
+            </div>
         </div>);
 }
 
