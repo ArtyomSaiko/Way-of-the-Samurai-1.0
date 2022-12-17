@@ -1,15 +1,11 @@
 import React from 'react';
 import MyPosts from './MyPosts/MyPosts.jsx';
+import ProfileInfo from './MyPosts/ProfileInfo/ProfileInfo.jsx';
 import s from './Profile.module.css';
 
 const Profile = () => {
     return (<div>
-        <div>
-            <img src='https://zastavok.net/main/auto/1423524421.jpg' />
-        </div>
-        <div>
-            ava + text
-        </div>
+        <ProfileInfo />
         <MyPosts />
     </div>)
 }
