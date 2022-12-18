@@ -13,10 +13,7 @@
     color: yellow;
 }
 
-.messages {
+.messages .message {
     padding: 5px;
-}
-
-.message {
-
+    color:white;
 }
