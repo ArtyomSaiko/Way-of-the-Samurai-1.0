@@ -3,12 +3,12 @@ import MyPosts from './MyPosts/MyPosts.jsx';
 import ProfileInfo from './MyPosts/ProfileInfo/ProfileInfo.jsx';
 import s from './Profile.module.css';
 
-const Profile = () => {
+const Profile = (props) => {
     return (
-    <div>
-        <ProfileInfo />
-        <MyPosts />
-    </div>)
+        <div>
+            <ProfileInfo />
+            <MyPosts posts={props.posts} />
+        </div>)
 }
 
 export default Profile;
