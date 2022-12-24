@@ -25,7 +25,7 @@ let state = {
 }
 
 export let addPost = (postMessage) => {
-    let newPost ={
+    let newPost = {
         id: 5,
         messege: postMessage,
         likesCount: 0,
