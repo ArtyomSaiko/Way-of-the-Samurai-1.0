@@ -11,22 +11,24 @@ import Settings from './components/Settings/Settings';
 
 const App = (props) => {
     return (
-            <div className='app-wrapper'>
-                <Header />
-                <Nav />
-                <div class='app-wrapper-content'>
-                    <Routes>
-                        <Route path="/profile/*" 
-                        element={<Profile state={props.state.profilePage} />} />
-                        <Route path="/dialogs/*" 
+        <div className='app-wrapper'>
+            <Header />
+            <Nav />
+            <div className='app-wrapper-content'>
+                <Routes>
+                    <Route path="/profile/*"
+                        element={<Profile
+                            state={props.state.profilePage}
+                            addPost={props.addPost} />} />
+                    <Route path="/dialogs/*"
                         element={<Dialogs state={props.state.dialogsPage} messages={props.state.dialogsPage} />} />
-                        <Route path="/news/*" element={<News />} />
-                        <Route path="/music/*" element={<Music />} />
-                        <Route path="/settings/*" element={<Settings />} />
-                    </Routes>
-                </div>
+                    <Route path="/news/*" element={<News />} />
+                    <Route path="/music/*" element={<Music />} />
+                    <Route path="/settings/*" element={<Settings />} />
+                </Routes>
             </div>
-        );
+        </div>
+    );
 }
 
 export default App;
