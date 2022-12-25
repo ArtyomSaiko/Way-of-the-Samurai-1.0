@@ -5,7 +5,8 @@ let state = {
         posts: [
             { id: 1, message: 'He, how are you?', likesCount: 10 },
             { id: 2, message: 'It\s, my first post', likesCount: 23 },
-        ]
+        ],
+        newPostText: 'it-kamasytra'
     },
     dialogsPage: {
         dialogs: [
