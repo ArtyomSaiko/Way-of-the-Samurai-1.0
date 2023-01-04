@@ -35,5 +35,4 @@ const Dialogs = (props) => {
         </div>
     )
 }
-
 export default Dialogs;
