@@ -6,5 +6,4 @@ const Message = (props) => {
     <div className={s.dialog}>{props.message}</div>
   )
 }
-
 export default Message;
