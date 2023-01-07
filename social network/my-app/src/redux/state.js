@@ -27,7 +27,7 @@ let state = {
             { id: 5, message: "Yo" },
         ]
     }
-}
+};
 
 export const addPost = () => {
     let newPost = {
