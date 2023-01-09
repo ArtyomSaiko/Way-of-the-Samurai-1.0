@@ -49,7 +49,6 @@ let store = {
                 message: this._state.profilePage.newPostText,
                 likesCount: 0,
             };
-
             this._state.profilePage.posts.push(newPost);
             this._state.profilePage.newPostText = '';
             this._callSubscriber(this._state);
