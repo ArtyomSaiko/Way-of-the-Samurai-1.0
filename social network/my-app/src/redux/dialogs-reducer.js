@@ -1,7 +1,7 @@
 const UPDATE_NEW_MESSAGE_BODY = 'UPDATE-NEW-MESSAGE-BODY';
 const SEND_MESSAGE = 'SEND-MESSAGE';
 
-export const dialogsReducer = (state, action) => {
+const dialogsReducer = (state, action) => {
     
     if (action.type === UPDATE_NEW_MESSAGE_BODY) {
         state.newMessageBody = action.body;
@@ -13,3 +13,5 @@ export const dialogsReducer = (state, action) => {
     
     return state;
 }
+
+export default dialogsReducer;
