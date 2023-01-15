@@ -4,20 +4,19 @@ import s from './MyPosts.module.css';
 import Posts from './Posts/Posts';
 
 const MyPosts = (props) => {
-  
+
   let postsElements =
     props.posts.map(p => <Posts message={p.message} like={p.likesCount} />);
 
   let newPostElement = React.createRef();
 
-  let addPost = () => {
-    props.dispatch(addPostActionCreator());
+  let onAddPost = () => {
+    props.addPost();
   }
 
   let onPostChange = () => {
     let text = newPostElement.current.value;
-    let action = upDateNewPostTextActionCreator(text)
-    props.dispatch(action);
+    props.upDateNewPostText(text);
   }
 
   return (
@@ -29,7 +28,7 @@ const MyPosts = (props) => {
             value={props.newPostText} />
         </div>
         <div>
-          <button onClick={addPost}>add post</button>
+          <button onClick={onAddPost}>add post</button>
         </div>
       </div>
       <div className={s.posts}>
