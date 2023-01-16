@@ -8,7 +8,6 @@ const MyPostsContainer = (props) => {
   let addPost = () => {
     props.store.dispatch(addPostActionCreator());
   }
-
   let onPostChange = (text) => {
     let action = upDateNewPostTextActionCreator(text)
     props.store.dispatch(action);
@@ -18,7 +17,6 @@ const MyPostsContainer = (props) => {
     addPost={addPost}
     posts={state.profilePage.posts}
     newPostText={state.profilePage.newPostText} />)
-
 }
 
 export default MyPostsContainer;
