@@ -7,7 +7,8 @@ import s from './Dialogs.module.css';
 
 const DialogsContainer = () => {
 
-    return <StoreContext.Consumer>{
+    return <StoreContext.Consumer>
+        {
         (store) => {
             let state = store.getState().dialogsPage;
             let onSendMessegeClick = () => {
