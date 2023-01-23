@@ -6,7 +6,8 @@ import MyPosts from './MyPosts';
 const MyPostsContainer = () => {
 
   return (
-    <StoreContext.Consumer> {
+    <StoreContext.Consumer>
+      {
       (store) => {
         let state = store.getState();
         let addPost = () => {
