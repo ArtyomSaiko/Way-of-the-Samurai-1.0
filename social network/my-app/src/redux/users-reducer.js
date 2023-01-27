@@ -4,9 +4,12 @@ const SET_USERS = 'SET_USERS';
 
 let initialState = {
     users: [
-        { id: 1, photoUrl: 'https://instagramis.ru/wp-content/uploads/dimas-blog.jpg', followed: false, fullName: 'Dmitriy', status: 'I am a boss', location: { city: 'Minsk', cuontry: 'Belsrus' } },
-        { id: 2, photoUrl: 'https://instagramis.ru/wp-content/uploads/dimas-blog.jpg', followed: true, fullName: 'Sasha', status: 'I am a boss too', location: { city: 'Moscow', cuontry: 'Russia' } },
-        { id: 3, photoUrl: 'https://instagramis.ru/wp-content/uploads/dimas-blog.jpg', followed: false, fullName: 'Andrey', status: 'I am a boss too', location: { city: 'Kiev', cuontry: 'Ukraine' } }
+        { id: 1, photoUrl: 'https://instagramis.ru/wp-content/uploads/dimas-blog.jpg',
+         followed: false, fullName: 'Dmitriy', status: 'I am a boss', location: { city: 'Minsk', cuontry: 'Belsrus' } },
+        { id: 2, photoUrl: 'https://instagramis.ru/wp-content/uploads/dimas-blog.jpg',
+         followed: true, fullName: 'Sasha', status: 'I am a boss too', location: { city: 'Moscow', cuontry: 'Russia' } },
+        { id: 3, photoUrl: 'https://instagramis.ru/wp-content/uploads/dimas-blog.jpg',
+         followed: false, fullName: 'Andrey', status: 'I am a boss too', location: { city: 'Kiev', cuontry: 'Ukraine' } }
     ]
 };
 
