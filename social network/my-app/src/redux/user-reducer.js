@@ -2,9 +2,10 @@ const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
 
 let initialState = {
-    posts: [
-        { id: 1, message: 'He, how are you?', likesCount: 10 },
-        { id: 2, message: 'It\s, my first post', likesCount: 23 },
+    users: [
+        { id: 1, fullName: 'Dmitriy', status: 'I am a boss', location: {city: 'Minsk', cuontry: 'Belsrus'}},
+        { id: 2, fullName: 'Sasha', status: 'I am a boss too', location: {city: 'Moscow', cuontry: 'Russia'}},
+        { id: 3, fullName: 'Andrey', status: 'I am a boss too', location: {city: 'Kiev', cuontry: 'Ukraine'}}
     ],
     newPostText: 'it-kamasytra'
 };
