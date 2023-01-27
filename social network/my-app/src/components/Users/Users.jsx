@@ -10,7 +10,9 @@ let Users = (props) => {
                         <img src={u.photoUrl} className ={styles.userPhoto} />
                     </div>
                     <div>
-                        <button> FOLLOW </button>
+                        {u.followed
+                        ? <button onClick={() => {props.unfollow(u.id)}}> UNFOLLOW </button>
+                        : <button onClick={() => {props.follow(u.id)}}> FOLLOW </button> }
                     </div>
                 </span>
                 <span>
