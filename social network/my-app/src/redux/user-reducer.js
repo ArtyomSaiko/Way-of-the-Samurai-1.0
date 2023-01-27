@@ -11,14 +11,17 @@ let initialState = {
 
 const userReducer = (state = initialState, action) => {
     switch (action.type) {
-    
+        case FOLLOW:
+
+        case UNFOLLOW:
+
         default:
             return state;
     }
 }
 
-export const followAC = () => ({ type: FOLLOW })
-export const unfollowAC = () =>
-    ({ type: UNFOLLOW, newText: text })
+export const followAC = (userId) => ({ type: FOLLOW, userId})
+export const unfollowAC = (userId) =>
+    ({ type: UNFOLLOW, userId})
 
 export default userReducer;
