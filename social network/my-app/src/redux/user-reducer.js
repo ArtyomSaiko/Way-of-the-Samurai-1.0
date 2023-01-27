@@ -1,0 +1,24 @@
+const ADD_POST = 'ADD-POST';
+const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+
+let initialState = {
+    posts: [
+        { id: 1, message: 'He, how are you?', likesCount: 10 },
+        { id: 2, message: 'It\s, my first post', likesCount: 23 },
+    ],
+    newPostText: 'it-kamasytra'
+};
+
+const userReducer = (state = initialState, action) => {
+    switch (action.type) {
+    
+        default:
+            return state;
+    }
+}
+
+export const addPostActionCreator = () => ({ type: ADD_POST })
+export const upDateNewPostTextActionCreator = (text) =>
+    ({ type: UPDATE_NEW_POST_TEXT, newText: text })
+
+export default userReducer;
