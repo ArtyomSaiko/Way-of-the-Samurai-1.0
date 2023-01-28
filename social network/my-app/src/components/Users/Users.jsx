@@ -1,24 +1,14 @@
+import axios from 'axios';
 import React from 'react';
 import styles from './Users.module.css';
 
 let Users = (props) => {
 
     if (props.users.length === 0) {
-        props.setUsers([
-            {
-                id: 1, photoUrl: 'https://instagramis.ru/wp-content/uploads/dimas-blog.jpg',
-                followed: false, fullName: 'Dmitriy', status: 'I am a boss', location: { city: 'Minsk', cuontry: 'Belarus' }
-            },
-            {
-                id: 2, photoUrl: 'https://instagramis.ru/wp-content/uploads/dimas-blog.jpg',
-                followed: true, fullName: 'Sasha', status: 'I am a boss too', location: { city: 'Moscow', cuontry: 'Russia' }
-            },
-            {
-                id: 3, photoUrl: 'https://instagramis.ru/wp-content/uploads/dimas-blog.jpg',
-                followed: false, fullName: 'Andrey', status: 'I am a boss too', location: { city: 'Kiev', cuontry: 'Ukraine' }
-            }
-        ]
-        )
+        axios.get("https://social-network.samuraijs.com/api/1.0/users").then(response => {
+            props.setUsers()   
+        });
+        
     }
 
     return <div>
