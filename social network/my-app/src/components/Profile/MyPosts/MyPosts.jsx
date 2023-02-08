@@ -17,7 +17,6 @@ const MyPosts = (props) => {
     let text = newPostElement.current.value;
     props.upDateNewPostText(text);
   }
-
   return (
     <div className={s.postBlock}>
       <h3>My posts</h3>
