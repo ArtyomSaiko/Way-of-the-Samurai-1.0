@@ -18,7 +18,6 @@ const Dialogs = (props) => {
         let body = e.target.value;
         props.upDateNewMessageBody(body);
     }
-
     return (
         <div className={s.dialogs}>
             <div className={s.dialogs}>
